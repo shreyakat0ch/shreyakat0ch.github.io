@@ -53,14 +53,7 @@
   </div>
 </section>
 
-<div class="stats-bar">
-  <div class="stats-grid">
-    <div class="glass stat-card reveal"><div class="stat-value" data-target="6">0</div><div class="stat-label">Repositories</div></div>
-    <div class="glass stat-card reveal"><div class="stat-value" data-target="440" data-suffix="+">0</div><div class="stat-label">Cell Lines</div></div>
-    <div class="glass stat-card reveal"><div class="stat-value" data-target="14" data-suffix="K">0</div><div class="stat-label">Genes in GRN</div></div>
-    <div class="glass stat-card reveal"><div class="stat-value" data-target="5">0</div><div class="stat-label">Histone Marks</div></div>
-  </div>
-</div>
+
 
 <section id="about">
   <div class="section-inner">
@@ -263,10 +256,7 @@ type();
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// ═══════ COUNTER ═══════
-let counted=false;
-const cObs=new IntersectionObserver(es=>{if(es[0].isIntersecting&&!counted){counted=true;document.querySelectorAll('.stat-value').forEach(el=>{const t=+el.dataset.target,s=el.dataset.suffix||'';let c=0;const step=Math.max(1,Math.ceil(t/50));const iv=setInterval(()=>{c+=step;if(c>=t){c=t;clearInterval(iv)}el.textContent=c+s},25)})}},{threshold:.5});
-cObs.observe(document.querySelector('.stats-bar'));
+
 
 // ═══════ 3D TILT ═══════
 document.querySelectorAll('[data-tilt]').forEach(card=>{
