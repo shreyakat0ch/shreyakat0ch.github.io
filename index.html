@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Shreya Katoch — Computational Biologist &amp; AI Researcher</title>
+  <meta name="description" content="Deep learning architectures for epigenomics, causal gene regulatory networks, and multi-omics integration.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<canvas id="dna-canvas"></canvas>
+
+<nav id="mainNav">
+  <div class="nav-inner">
+    <div class="nav-logo">SK.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Research</a></li>
+      <li><a href="#tech">Stack</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right"><button id="theme-toggle" aria-label="Toggle theme">🌙</button></div>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge"><span class="pulse-dot"></span>Open to Collaborate</div>
+      <h1>Hi, I'm <span class="gradient">Shreya Katoch</span></h1>
+      <p class="hero-subtitle">Computational Biologist &amp; AI Researcher</p>
+      <div class="typing-container"><span id="typing"></span><span class="cursor"></span></div>
+      <p class="tagline">Building deep learning systems that decode the human epigenome and uncover causal gene regulatory networks across 440+ cell lines.</p>
+      <div class="hero-buttons">
+        <a href="https://github.com/shreyakat0ch" target="_blank" class="btn btn-primary">⭐ View GitHub</a>
+        <a href="#projects" class="btn btn-outline">Explore Research →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrapper" id="avatarTilt">
+        <div class="avatar-container">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring-2"></div>
+          <img src="https://github.com/shreyakat0ch.png" alt="Shreya Katoch" class="avatar-img">
+          <div class="avatar-orbs"><div class="orb"></div><div class="orb"></div><div class="orb"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div class="glass stat-card reveal"><div class="stat-value" data-target="6">0</div><div class="stat-label">Repositories</div></div>
+    <div class="glass stat-card reveal"><div class="stat-value" data-target="440" data-suffix="+">0</div><div class="stat-label">Cell Lines</div></div>
+    <div class="glass stat-card reveal"><div class="stat-value" data-target="14" data-suffix="K">0</div><div class="stat-label">Genes in GRN</div></div>
+    <div class="glass stat-card reveal"><div class="stat-value" data-target="5">0</div><div class="stat-label">Histone Marks</div></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="section-header"><span class="tag">Who I Am</span><h2>About <span class="gradient">Me</span></h2><p>Where AI meets biology — decoding life's operating system</p></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm passionate about applying cutting-edge deep learning to solve fundamental problems in genomics and epigenomics. My work sits at the intersection of computational biology, machine learning, and systems biology — building models that learn from DNA sequence, chromatin state, and transcription to understand how cells work.</p>
+        <div class="about-highlight">"I can step into almost any domain and solve problems using a data-driven AI approach."</div>
+        <p>Currently developing a hybrid CNN-Transformer architecture that predicts histone modification intensities across 440+ human cell lines using FiLM-conditioned DNA-RNA integration. Simultaneously building a genome-wide causal GRN discovery pipeline scaling to 14,000 genes.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="glass skill-card reveal"><span class="icon">🧬</span><h4>Genomics &amp; Epigenomics</h4><p>ChIP-seq, RNA-seq, histone marks, hg38, multi-omics</p></div>
+        <div class="glass skill-card reveal"><span class="icon">🤖</span><h4>Deep Learning</h4><p>CNN-Transformer, FiLM, GNN, attention mechanisms</p></div>
+        <div class="glass skill-card reveal"><span class="icon">📊</span><h4>Causal Inference</h4><p>Model-X Knockoffs, DAGs, GraphSAGE, DG scoring</p></div>
+        <div class="glass skill-card reveal"><span class="icon">⚡</span><h4>HPC &amp; Systems</h4><p>PyTorch, 128-core HPC, GPU clusters, Linux</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-inner">
+    <div class="section-header"><span class="tag">Academic Path</span><h2>My <span class="gradient">Education</span></h2><p>The foundation of my research and technical expertise</p></div>
+    <div class="projects-grid">
+      <div class="glass project-card reveal">
+        <div class="project-icon" style="background:rgba(188, 138, 95, 0.15)">🎓</div>
+        <h3>M.Sc. in Data Science &amp; AI</h3>
+        <p class="desc">Pursuing advanced studies in Artificial Intelligence, Machine Learning, and Large Scale Data Analysis. Researching intersections of AI and Biological Systems.</p>
+        <div class="project-tags">
+          <span class="tag-pill purple">2024 – 2026</span><span class="tag-pill cyan">AI &amp; DS</span>
+        </div>
+      </div>
+      <div class="glass project-card reveal">
+        <div class="project-icon" style="background:rgba(188, 138, 95, 0.15)">📜</div>
+        <h3>B.Sc. in Physical Sciences</h3>
+        <p class="desc">Gained rigorous foundations in analytical sciences, mathematics, and computational logic. Graduated with a focus on data-driven physical modeling.</p>
+        <div class="project-tags">
+          <span class="tag-pill purple">2021 – 2024</span><span class="tag-pill cyan">Physical Sciences</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-header"><span class="tag">Portfolio</span><h2>Research &amp; <span class="gradient">Projects</span></h2><p>Deep learning systems for biological discovery</p></div>
+    <div class="projects-grid">
+
+      <div class="glass project-card reveal" data-tilt>
+        <span class="featured">★ FLAGSHIP</span>
+        <div class="project-icon" style="background:rgba(139,92,246,.12)">🧬</div>
+        <h3>Histone Mark Predictor</h3>
+        <p class="desc">Cell-conditioned CNN-Transformer predicting 5 histone modifications (H3K27ac, H3K4me3, H3K27me3, H3K9me3, H3K4me1) across the human epigenome via FiLM-conditioned DNA-RNA integration.</p>
+        <div class="project-tags">
+          <span class="tag-pill purple">PyTorch</span><span class="tag-pill cyan">CNN-Transformer</span><span class="tag-pill rose">FiLM</span><span class="tag-pill amber">440+ Cells</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/shreyakat0ch/histone-mark-predictor" target="_blank" class="project-link">View Repo →</a>
+          <span class="project-stars">★ 1</span>
+        </div>
+      </div>
+
+      <div class="glass project-card reveal" data-tilt>
+        <span class="featured">★ FLAGSHIP</span>
+        <div class="project-icon" style="background:rgba(6,182,212,.12)">🕸️</div>
+        <h3>Causal GRN Pipeline</h3>
+        <p class="desc">5-stage genome-wide causal discovery for gene regulatory networks. Knockoff statistics → RF skeleton → STRING PPI → GraphSAGE attribution → Degenerate Gaussian DAG. Scales to 14K genes.</p>
+        <div class="project-tags">
+          <span class="tag-pill purple">Knockoffs</span><span class="tag-pill cyan">GraphSAGE</span><span class="tag-pill rose">DAG</span><span class="tag-pill amber">14K Genes</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/shreyakat0ch/causal_grn_pipeline" target="_blank" class="project-link">View Repo →</a>
+          <span class="project-stars">★ 1 · 🍴 1</span>
+        </div>
+      </div>
+
+      <div class="glass project-card reveal" data-tilt>
+        <div class="project-icon" style="background:rgba(244,63,94,.12)">🔬</div>
+        <h3>DAG-DeepVASE Extensions</h3>
+        <p class="desc">Genome-wide causal network inference for bulk RNA-seq. Extended fork of DAG-deepVASE with improved network construction and biological validation pipelines.</p>
+        <div class="project-tags">
+          <span class="tag-pill purple">Python</span><span class="tag-pill cyan">Causal</span><span class="tag-pill rose">RNA-seq</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/shreyakat0ch/Causal-networks-by-modified-DAG-DeepVASE" target="_blank" class="project-link">View Repo →</a>
+          <span class="project-stars">★ 1</span>
+        </div>
+      </div>
+
+      <div class="glass project-card reveal" data-tilt>
+        <div class="project-icon" style="background:rgba(245,158,11,.12)">💰</div>
+        <h3>Dynamic Pricing Engine</h3>
+        <p class="desc">ML-driven dynamic pricing for e-commerce. Real-time optimization using data science techniques to adapt pricing strategies based on market dynamics.</p>
+        <div class="project-tags">
+          <span class="tag-pill purple">Jupyter</span><span class="tag-pill cyan">ML</span><span class="tag-pill amber">Pricing</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/shreyakat0ch/dynmicpricesforecommerce" target="_blank" class="project-link">View Repo →</a>
+          <span class="project-stars">★ 2</span>
+        </div>
+      </div>
+
+      <div class="glass project-card reveal" data-tilt>
+        <div class="project-icon" style="background:rgba(16,185,129,.12)">💸</div>
+        <h3>Expense Splitter</h3>
+        <p class="desc">Clean Python application for group expense management. Demonstrates solid software engineering with clear architecture and intuitive UX.</p>
+        <div class="project-tags"><span class="tag-pill purple">Python</span><span class="tag-pill cyan">CLI</span></div>
+        <div class="project-footer">
+          <a href="https://github.com/shreyakat0ch/EXPENSESPLITTER" target="_blank" class="project-link">View Repo →</a>
+          <span class="project-stars">★ 2</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="tech">
+  <div class="section-inner">
+    <div class="section-header"><span class="tag">Toolbox</span><h2>Tech <span class="gradient">Stack</span></h2><p>The tools powering my research</p></div>
+    <div class="tech-grid reveal">
+      <div class="glass tech-chip"><span class="dot" style="background:#EE4C2C"></span>PyTorch</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#3776AB"></span>Python</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#F7931E"></span>Jupyter</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#013243"></span>NumPy</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#150458"></span>Pandas</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#3EAAAF"></span>Scikit-learn</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#FF6F00"></span>TensorFlow</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#8b5cf6"></span>PyG / GraphSAGE</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#6DB33F"></span>Bioconductor</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#F05032"></span>Git</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#2496ED"></span>Docker</div>
+      <div class="glass tech-chip"><span class="dot" style="background:#FCC624"></span>Linux / HPC</div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="section-inner">
+    <div class="section-header"><span class="tag">Timeline</span><h2>Research <span class="gradient">Journey</span></h2></div>
+    <div class="timeline reveal">
+      <div class="tl-item"><div class="tl-dot"></div><span class="time">2026 (Expected)</span><h3>M.Sc. Thesis — Epigenomic Transformer Architectures</h3><p>Researching hybrid CNN-Transformer models for high-resolution histone modification prediction across 440+ cell lines.</p></div>
+      <div class="tl-item"><div class="tl-dot"></div><span class="time">2024 – 2025</span><h3>Internship: Deep Learning in Bioinformatics</h3><p><strong>CSIR-IHBT</strong> — Developed deep learning models for biological data analysis, focusing on genomic sequence processing and feature extraction.</p></div>
+      <div class="tl-item"><div class="tl-dot"></div><span class="time">2024 – 2025</span><h3>Causal GRN Discovery Pipeline</h3><p>Developed a 5-stage causal inference pipeline scaling to 14,000 genes using GraphSAGE and Model-X Knockoffs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME SECTION -->
+<section id="resume">
+  <div class="section-inner">
+    <div class="section-header"><span class="tag">Curriculum Vitae</span><h2>Professional <span class="gradient">Resume</span></h2><p>A summary of my technical skills and research contributions</p></div>
+    <div class="about-grid">
+      <div class="glass project-card reveal" style="grid-column: span 2; display: flex; align-items: center; justify-content: space-between; padding: 3rem;">
+        <div style="max-width: 600px;">
+          <h3>Ready for New Challenges</h3>
+          <p class="desc" style="margin-bottom: 0;">Download my full CV to see detailed experience in Epigenomics, Deep Learning implementation, and Causal Discovery pipelines.</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="padding: 1.2rem 2.5rem; font-size: 1rem;">📄 Download CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header"><span class="tag">Connect</span><h2>Let's <span class="gradient">Talk</span></h2><p>Open to collaborations in ML × Biology</p></div>
+    <div class="contact-grid reveal">
+      <a href="https://github.com/shreyakat0ch" target="_blank" class="glass contact-card"><span class="c-icon">🐙</span><h3>GitHub</h3><p>@shreyakat0ch</p></a>
+      <a href="mailto:shreya@example.com" class="glass contact-card"><span class="c-icon">✉️</span><h3>Email</h3><p>Get in touch</p></a>
+      <a href="#" class="glass contact-card"><span class="c-icon">💼</span><h3>LinkedIn</h3><p>Connect professionally</p></a>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2026 Shreya Katoch — Built with <span class="heart">♥</span> and passion for science</p></footer>
+
+<script>
+// ═══════ THEME ═══════
+const toggle=document.getElementById('theme-toggle'),html=document.documentElement;
+toggle.addEventListener('click',()=>{const d=html.dataset.theme==='dark';html.dataset.theme=d?'light':'dark';toggle.textContent=d?'☀️':'🌙'});
+
+// ═══════ SCROLL PROGRESS ═══════
+const prog=document.getElementById('scrollProgress');
+window.addEventListener('scroll',()=>{const s=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight;prog.style.width=(s/h*100)+'%';document.getElementById('mainNav').classList.toggle('scrolled',s>50)});
+
+// ═══════ CURSOR GLOW ═══════
+const glow=document.getElementById('cursorGlow');
+document.addEventListener('mousemove',e=>{glow.style.transform=`translate(${e.clientX-200}px,${e.clientY-200}px)`});
+
+// ═══════ TYPING ═══════
+const phrases=['Bioinformatics Researcher','Decoding the Epigenome','CNN-Transformer Architectures','Causal Regulatory Networks','Advancing Computational Biology'];
+let pi=0,ci=0,del=false;const typ=document.getElementById('typing');
+function type(){const p=phrases[pi];if(!del){typ.textContent=p.slice(0,++ci);if(ci===p.length){del=true;setTimeout(type,2200);return}}else{typ.textContent=p.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;setTimeout(type,400);return}}setTimeout(type,del?30:60)}
+type();
+
+// ═══════ REVEAL ═══════
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// ═══════ COUNTER ═══════
+let counted=false;
+const cObs=new IntersectionObserver(es=>{if(es[0].isIntersecting&&!counted){counted=true;document.querySelectorAll('.stat-value').forEach(el=>{const t=+el.dataset.target,s=el.dataset.suffix||'';let c=0;const step=Math.max(1,Math.ceil(t/50));const iv=setInterval(()=>{c+=step;if(c>=t){c=t;clearInterval(iv)}el.textContent=c+s},25)})}},{threshold:.5});
+cObs.observe(document.querySelector('.stats-bar'));
+
+// ═══════ 3D TILT ═══════
+document.querySelectorAll('[data-tilt]').forEach(card=>{
+  card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(800px) rotateY(${x*8}deg) rotateX(${-y*8}deg) translateY(-6px)`;card.style.transition='transform .1s'});
+  card.addEventListener('mouseleave',()=>{card.style.transform='';card.style.transition='transform .5s'})
+});
+
+// ═══════ AVATAR TILT ═══════
+const av=document.getElementById('avatarTilt');
+if(av){const ac=av.querySelector('.avatar-container');
+  av.addEventListener('mousemove',e=>{const r=av.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;ac.style.transform=`rotateY(${x*15}deg) rotateX(${-y*15}deg)`});
+  av.addEventListener('mouseleave',()=>{ac.style.transform=''})}
+
+// ═══════ DNA PARTICLES ═══════
+const can=document.getElementById('dna-canvas'),ctx=can.getContext('2d');
+let W,H;function resize(){W=can.width=innerWidth;H=can.height=innerHeight}resize();addEventListener('resize',resize);
+const pts=[];class P{constructor(){this.reset()}reset(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.25;this.vy=(Math.random()-.5)*.25;this.r=Math.random()*1.8+.4;this.a=Math.random()*.3+.08;const c=['212,163,115','139,94,52','188,138,95'];this.c=c[~~(Math.random()*3)]}update(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H)this.reset()}draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);ctx.fillStyle=`rgba(${this.c},${this.a})`;ctx.fill()}}
+for(let i=0;i<80;i++)pts.push(new P);
+function anim(){ctx.clearRect(0,0,W,H);pts.forEach(p=>{p.update();p.draw()});
+for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<100){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.strokeStyle=`rgba(212,163,115,${.06*(1-d/100)})`;ctx.lineWidth=.4;ctx.stroke()}}
+requestAnimationFrame(anim)}anim();
+
+// ═══════ SMOOTH ANCHOR ═══════
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+</script>
+</body>
+</html>
